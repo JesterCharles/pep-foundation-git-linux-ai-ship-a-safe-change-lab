@@ -1,0 +1,12 @@
+test_env_file_is_ignored_and_untracked (test_ship_safe_change.ShipSafeChange.test_env_file_is_ignored_and_untracked) ... ok
+test_expected_feature_branch_is_checked_out (test_ship_safe_change.ShipSafeChange.test_expected_feature_branch_is_checked_out) ... ok
+test_feature_commit_is_focused (test_ship_safe_change.ShipSafeChange.test_feature_commit_is_focused) ... ok
+test_merge_is_resolved_without_markers (test_ship_safe_change.ShipSafeChange.test_merge_is_resolved_without_markers) ... ok
+test_prepared_branch_is_merged (test_ship_safe_change.ShipSafeChange.test_prepared_branch_is_merged) ... ok
+test_reads_deploy_env_and_has_default (test_ship_safe_change.ShipSafeChange.test_reads_deploy_env_and_has_default) ... ok
+test_worktree_is_clean_except_ignored_files (test_ship_safe_change.ShipSafeChange.test_worktree_is_clean_except_ignored_files) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in <seconds>s
+
+OK

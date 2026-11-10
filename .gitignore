@@ -1,0 +1,16 @@
+# Created by setup and by the test run; rebuild with: python tests/setup_lab.py
+__pycache__/
+*.pyc
+
+# Local secrets and environment files: never commit them
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
