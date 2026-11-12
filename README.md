@@ -93,12 +93,17 @@ assistant's actual edit:
 git diff
 ```
 
-For each claim, find the diff line that supports it, or note that none does:
+For each claim, find the diff line that supports it, or note that none does.
+
+<details>
+<summary>Hint</summary>
 
 - Claim 1 says the name comes from `DEPLOY_ENV`. In the `+` lines of
   `status_message.py`, where does the deployment name come from?
 - Claim 2 says `.env` can no longer be committed. Does the diff touch `.gitignore`?
   Does `git status` still list `.env`?
+
+</details>
 
 Write your review decision, **request changes** or **approve**, with one line of
 evidence per claim. Keep this note outside the project folder (on paper or in a
@@ -120,11 +125,18 @@ below the comments, and save. Run `git status` again: `.env` is no longer listed
 
 **Then fix the code.** In `status_message.py`, replace the hard-coded deployment
 name so that the function reads `DEPLOY_ENV` and falls back to `development` when it
-is not set. The Python you need:
+is not set.
+
+<details>
+<summary>Hint</summary>
+
+The Python you need:
 
 - `import os` at the top of the file gives access to the process environment.
 - `os.environ.get("NAME", "fallback")` returns the variable called `NAME`, or
   `"fallback"` when it is not set.
+
+</details>
 
 Do not read or parse `.env` in the code, and keep the return format
 `<deployment>: ready`.
